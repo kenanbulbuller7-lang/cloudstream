@@ -28,5 +28,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: provider-release
-          path: build/outputs/apk/
-          if-no-files-found: ignore
+          path: build/outputs/apk/release/*.apk
