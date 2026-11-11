@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Set up JDK
@@ -21,11 +21,17 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Build with Gradle
-        run: ./gradlew assembleDebug
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
 
-      - name: Upload apk
+      - name: Build with Gradle
+        run: ./gradlew make
+
+      - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: plugin-debug
-          path: '**/build/outputs/apk/debug/.apk'
+          name: Cloudstream-APK
+          path: |
+            build/outputs/apk/debug/*.apk
+            **/*.plugin
+            *.apk
