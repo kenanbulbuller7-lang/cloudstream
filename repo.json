@@ -1,0 +1,6 @@
+"name": "BigBull App",
+  "author": "F0Rextasy",
+  "description": "Özel eklenti deposu",
+  "iconUrl": "https://raw.githubusercontent.com/recloudstream/cloudstream/master/icon.png",
+  "manifestUrl": "https://raw.githubusercontent.com/F0Rextasy/bigbullapp-cs/master/repo.json",
+  "plugins": []
