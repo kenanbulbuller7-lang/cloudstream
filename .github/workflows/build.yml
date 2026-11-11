@@ -1,4 +1,4 @@
-name: Build Cloudstream Provider
+name: Build Cloudstream APK
 
 on:
   workflow_dispatch:
@@ -31,4 +31,4 @@ jobs:
           path: |
             app/build/outputs/apk/debug/*.apk
             build/outputs/apk/debug/*.apk
-            *.apk
+            **/*.apk
