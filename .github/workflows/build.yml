@@ -22,4 +22,4 @@ jobs:
           java-version: '17'
 
       - name: Build Provider
-        uses: cloudstream-extensions/cloudstream-action @master
+        uses: recloudstream/action@master
